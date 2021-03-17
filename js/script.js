@@ -114,22 +114,3 @@ new Swiper('.portfolio-slider', {
 	},
 	loop: true,
 });
-
-/*карта*/
-// let map;
-// function initMap() {
-// 	map = new google.maps.Map(document.getElementById("map"), {
-// 		center: { lat: 44.77812858246703, lng: 17.187267805370173 },
-// 		zoom: 15,
-// 	});
-// 	marker = new google.maps.Marker({
-// 		position: coordinates,
-// 		map: map,
-// 	});
-// 	image = '../img/map_marker.jpg',
-// 		marker = new google.maps.Marker({
-// 			position: { lat: 44.77812858246703, lng: 17.187267805370173 },
-// 			map: map,
-// 			icon: image
-// 		});
-// }

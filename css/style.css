@@ -295,12 +295,11 @@ body {
 
 .header__item {
   text-align: left;
-  margin: 0px 40px 0px 0;
-  padding: 0px 0px 10px 0px;
+  margin: 0px 30px 0px 0;
 }
 
 .header__item:last-child {
-  margin: 0px 0px 0px 0;
+  margin: 0;
 }
 
 .header__link {
@@ -310,11 +309,22 @@ body {
   font-weight: 700;
   line-height: 14px;
   color: #373a39;
-  padding: 10px 0px;
+  padding: 10px 10px;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
 .header__link_active {
   border-bottom: #fcbb08 2px solid;
+}
+
+.header__link:hover {
+  background: #f5f5f5;
+  border-radius: 5px;
 }
 
 .wrapper {
@@ -624,6 +634,10 @@ body {
   border-bottom: 2px solid #fcbb08;
 }
 
+.portfolio__nav-btn:hover {
+  color: blue;
+}
+
 .portfolio__row {
   -webkit-column-count: 4;
      -moz-column-count: 4;
@@ -702,6 +716,10 @@ body {
   width: 100%;
   background: #f6f8fa;
   padding: 40px 0px;
+}
+
+.portfolio-btn:hover {
+  background: #f3f3f3;
 }
 
 .portfolio__quote {
@@ -973,6 +991,13 @@ body {
   padding: 25px 0px;
   width: 100%;
   background: none;
+  -webkit-transition: font-size 0.6s;
+  -o-transition: font-size 0.6s;
+  transition: font-size 0.6s;
+}
+
+.price__btn:hover {
+  font-size: 18px;
 }
 
 .clients {
@@ -1034,6 +1059,13 @@ body {
   letter-spacing: 2px;
   background: #242121;
   padding: 15px 58px;
+  -webkit-transition: background 0.6s;
+  -o-transition: background 0.6s;
+  transition: background 0.6s;
+}
+
+.contact-form__btn:hover {
+  background: #757070;
 }
 
 .contact__map {
@@ -1065,6 +1097,7 @@ body {
 .footer-logo a {
   display: block;
   width: 42px;
+  height: 42px;
   margin: 0 auto;
 }
 
@@ -1080,6 +1113,13 @@ body {
   line-height: 15px;
   letter-spacing: 4px;
   margin: 0px 15px;
+  -webkit-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+.footer-social a:hover {
+  color: #757070;
 }
 
 .footer-adress {
@@ -1090,6 +1130,13 @@ body {
 .footer-adress a {
   color: #a8a8a8;
   display: block;
+  -webkit-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+.footer-adress a:hover {
+  color: #757070;
 }
 
 .footer-btn {
