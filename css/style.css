@@ -652,7 +652,7 @@ body {
 
 .portfolio__item {
   float: left;
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
