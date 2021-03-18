@@ -251,6 +251,18 @@ body {
           justify-content: space-between;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
 /*HEADER*/
 
 .header {
@@ -327,18 +339,6 @@ body {
   border-radius: 5px;
 }
 
-.wrapper {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-}
-
 .fullscrean {
   min-height: 100vh;
   background: url(../img/fullscrean_bg.jpg) 0 0/cover no-repeat;
@@ -387,6 +387,7 @@ body {
   color: #fcbb08;
   line-height: 19.5px;
   letter-spacing: 2.74px;
+  margin: 0px 0px 50px 0px;
 }
 
 .fullscrean__scroll {
@@ -394,7 +395,7 @@ body {
   width: 26px;
   height: 43px;
   left: 50%;
-  bottom: 60px;
+  bottom: 2%;
   -webkit-animation: scroll 1.7s infinite ease;
           animation: scroll 1.7s infinite ease;
 }
@@ -461,7 +462,7 @@ body {
 }
 
 .about {
-  margin: 0px 0px 60px 0px;
+  margin: 0px 0px 62px 0px;
 }
 
 .about__us {
@@ -494,11 +495,11 @@ body {
   font-weight: 700;
   line-height: 75px;
   letter-spacing: -1.65px;
-  margin: 140px 0px 90px 0px;
+  margin: 40px 0px 30px 0px;
 }
 
 .scale__row {
-  margin: 0px -15px 110px -15px;
+  margin: 0px -15px 50px -15px;
 }
 
 .scale__block {
@@ -554,7 +555,7 @@ body {
 }
 
 .work__row {
-  margin: 0px -15px 160px -15px;
+  margin: 0px -15px 40px -15px;
 }
 
 .work__block {
@@ -579,12 +580,16 @@ body {
 }
 
 .magic__img {
-  width: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .magic__block {
-  width: 50%;
-  padding: 100px 30px 0px 130px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 50px 20px 10px 30px;
   background: #f6f8fa;
 }
 
@@ -594,7 +599,7 @@ body {
   font-weight: 700;
   line-height: 75px;
   letter-spacing: -1.65px;
-  margin: 0px 0px 65px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .magic__text p {
@@ -613,7 +618,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 0px 100px 0px;
+  padding: 0px 0px 40px 0px;
 }
 
 .portfolio__nav-btn {
@@ -726,7 +731,7 @@ body {
   font-family: "Merriweather", Arial, sans-serif;
   font-style: italic;
   text-align: center;
-  padding: 130px 0 130px 0;
+  padding: 70px 0;
 }
 
 .portfolio__quote-text {
@@ -743,7 +748,7 @@ body {
 }
 
 .portfolio__facts {
-  padding: 160px 0px;
+  padding: 50px 0px;
 }
 
 .portfolio__facts_row {
@@ -776,7 +781,7 @@ body {
 }
 
 .portfolio-slider__slide {
-  padding: 205px 80px 205px 130px;
+  padding: 50px 80px 50px 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -784,14 +789,14 @@ body {
 
 .portfolio-slider__content {
   width: 65%;
-  padding: 0px 130px 0px 0px;
+  padding: 0px 40px 0px 0px;
 }
 
 .portfolio-slider__title {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 130%;
   color: #242121;
   margin: 0px 0px 30px 0px;
 }
@@ -848,8 +853,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
-  padding: 0px 0px 0px 130px;
-  bottom: 110px;
+  padding: 0px 0px 0px 5%;
+  bottom: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -874,11 +879,11 @@ body {
 /*Team*/
 
 .team {
-  padding: 62px 0px 128px 0px;
+  padding: 62px 0px 60px 0px;
 }
 
 .team__title {
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 40px 0px;
 }
 
 .team__row {
@@ -906,11 +911,11 @@ body {
 
 .price {
   background: #f6f8fa;
-  padding: 62px 0px 98px 0px;
+  padding: 62px 0px 60px 0px;
 }
 
 .price__title {
-  margin: 0px 0px 90px 0px;
+  margin: 0px 0px 40px 0px;
 }
 
 .price__row {
@@ -1001,7 +1006,7 @@ body {
 }
 
 .clients {
-  padding: 98px 0px;
+  padding: 50px 0px;
 }
 
 .clients__row {
@@ -1084,11 +1089,11 @@ body {
 
 .footer__top {
   background: #373a39;
-  padding: 110px 0px 120px 0px;
+  padding: 50px 0px;
 }
 
 .footer-logo {
-  margin: 0px auto 70px auto;
+  margin: 0px auto 50px auto;
   width: 150px;
   border-bottom: 2px solid #fcbb08;
   padding: 0px 0px 24px 0px;
@@ -1102,7 +1107,7 @@ body {
 }
 
 .footer-social {
-  margin: 0px 0px 65px 0px;
+  margin: 0px 0px 40px 0px;
 }
 
 .footer-social a {
@@ -1140,7 +1145,7 @@ body {
 }
 
 .footer-btn {
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
   display: block;
 }
 
@@ -1194,18 +1199,6 @@ body {
     margin-bottom: 70px;
   }
 
-  .magic__block {
-    /*Только если меньше контейнера*/
-    padding-left: 100px;
-    /*Только если меньше контейнера*/
-    padding-top: 100px;
-  }
-
-  .magic__title {
-    /*Только если меньше контейнера*/
-    margin-bottom: 100px;
-  }
-
   .portfolio__top {
     /*Только если меньше контейнера*/
     padding-bottom: 50px;
@@ -1239,23 +1232,8 @@ body {
     padding-bottom: 50px;
   }
 
-  .portfolio-slider__slide {
-    /*Только если меньше контейнера*/
-    padding-top: 100px;
-    /*Только если меньше контейнера*/
-    padding-bottom: 100px;
-    /*Только если меньше контейнера*/
-    padding-left: 100px;
-  }
-
-  .portfolio-slider__content {
-    /*Только если меньше контейнера*/
-    padding-right: 100px;
-  }
-
   .portfolio-slider .swiper-pagination {
-    /*Только если меньше контейнера*/
-    bottom: 50px;
+    bottom: 30px;
   }
 
   .team {
@@ -1331,18 +1309,6 @@ body {
     margin-bottom: calc(10px + 60 * ((100vw - 320px) / 850));
   }
 
-  .magic__block {
-    padding-left: calc(20px + 80 * ((100vw - 320px) / 850));
-  }
-
-  .magic__block {
-    padding-top: calc(20px + 80 * ((100vw - 320px) / 850));
-  }
-
-  .magic__title {
-    margin-bottom: calc(10px + 90 * ((100vw - 320px) / 850));
-  }
-
   .portfolio__top {
     padding-bottom: calc(20px + 30 * ((100vw - 320px) / 850));
   }
@@ -1377,26 +1343,6 @@ body {
 
   .portfolio__facts {
     padding-bottom: calc(20px + 30 * ((100vw - 320px) / 850));
-  }
-
-  .portfolio-slider__slide {
-    padding-top: calc(20px + 80 * ((100vw - 320px) / 850));
-  }
-
-  .portfolio-slider__slide {
-    padding-bottom: calc(30px + 70 * ((100vw - 320px) / 850));
-  }
-
-  .portfolio-slider__slide {
-    padding-left: calc(80px + 20 * ((100vw - 320px) / 850));
-  }
-
-  .portfolio-slider__content {
-    padding-right: calc(10px + 90 * ((100vw - 320px) / 850));
-  }
-
-  .portfolio-slider .swiper-pagination {
-    bottom: calc(15px + 35 * ((100vw - 320px) / 850));
   }
 
   .team {
@@ -1460,6 +1406,10 @@ body {
        -moz-column-count: 3;
             column-count: 3;
   }
+
+  .portfolio-slider__title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 830px) {
@@ -1468,6 +1418,18 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .work__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .work__block {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -1520,17 +1482,6 @@ body {
     width: 100%;
   }
 
-  .work__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .work__content {
-    padding: 0px 0px 0px 0px;
-  }
-
   .magic__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1572,7 +1523,7 @@ body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   body.lock {
     overflow: hidden;
   }
@@ -1669,18 +1620,6 @@ body {
     bottom: 9px;
   }
 
-  .work__row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .work__block {
-    width: 100%;
-    padding: 20px;
-  }
-
   .portfolio__row {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -1724,7 +1663,7 @@ body {
 
   .team__card {
     width: 50%;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 15px 20px 15px;
   }
 
   .price__row {
@@ -1742,7 +1681,7 @@ body {
   }
 }
 
-@media (max-width: 640px) and (max-width: 1170px) {
+@media (max-width: 700px) and (max-width: 1170px) {
   .header__logo {
     width: calc(35px + 7 * ((100vw - 320px) / 850));
   }
